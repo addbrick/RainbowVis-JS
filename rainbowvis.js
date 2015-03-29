@@ -55,7 +55,7 @@ function Rainbow()
 		} else {
 			var segment = (maxNum - minNum)/(gradients.length);
 			var index = Math.min(Math.floor((Math.max(number, minNum) - minNum)/segment), gradients.length - 1);
-			return gradients[index].colourAt(number);
+			return '#' + gradients[index].colourAt(number);
 		}
 	}
 
